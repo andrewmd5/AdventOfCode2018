@@ -9,7 +9,10 @@ namespace AdventOfCode
             Console.WriteLine("Hello World!");
             Day1.Solve();
             Day2.Solve();
+            Day3.Solve();
             Console.Read();
         }
     }
+
+    
 }
