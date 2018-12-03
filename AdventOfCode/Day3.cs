@@ -60,14 +60,11 @@ namespace AdventOfCode
                             gridDictY = new Dictionary<int, int>();
                             grid[x] = gridDictY;
                         }
-
                         if (!gridDictY.TryGetValue(y, out var gridAtLocation))
                         {
                             gridAtLocation = 0;
                         }
-
-                        ++gridAtLocation;
-                        gridDictY[y] = gridAtLocation;
+                        gridDictY[y] = ++gridAtLocation;
                     }
                 }
             }
